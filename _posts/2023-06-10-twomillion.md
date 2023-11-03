@@ -7,8 +7,6 @@ tags: [hackthebox, htb, writeup, easy, machine, linux, kernel, api, js-desobfusc
 author: trace
 ---
 
-<img src="/assets/writeups/2023-06-10-twomillion/TwoMillion.png" width=500px alt="Infocard TwoMillion">
-
 ## Machine Information
 
 ---
