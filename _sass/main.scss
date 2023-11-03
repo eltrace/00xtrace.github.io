@@ -2,14 +2,10 @@
 
 $font-iosevka: "Iosevka", monospace;
 
-// Define dark mode colors
-$dark-background: #333;
-$dark-text: #fff;
-$dark-link: #F08080;
-
 body {
   font-family: #{$font-iosevka}, Verdana, sans-serif;
-  color: $dark-text;
+  background-color: gray; /* Change the background color to grey */
+  color: white; /* Change text color to white */
   font-size: 16px;
   position: relative;
   min-height: 100vh;
@@ -17,15 +13,14 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.6;
-  background-color: $dark-background; // Set background color for dark mode
 }
 
 a {
-  color: $dark-text;
+  color: white; /* Change link text color to white */
   text-decoration: none;
 }
 a:hover {
-  color: $dark-link;
+  color: #F08080;
   text-decoration: underline 3px;
 }
 
@@ -49,11 +44,11 @@ h2, h3, h4, h5, h6 {
 //navbar
 .navbar {
   padding: 10px;
-  background-color: $dark-background; // Set background color for dark mode
+  background-color: $foot-nav-bg-color;
   font-weight: bold;
   &-brand {
     font-size: 22px;
-    color: $dark-text;
+    color: white; /* Change brand text color to white */
   }
   &-brand:hover {
     text-decoration: none;
@@ -68,7 +63,7 @@ h2, h3, h4, h5, h6 {
 
 .nav-item {
   font-size: 16px;
-  color: $dark-text;
+  color: white; /* Change nav item text color to white */
 }
 
 //footer
@@ -78,13 +73,13 @@ h2, h3, h4, h5, h6 {
     padding: 20px 20px;
     height: 100px;
     text-align: center;
-    background-color: $dark-background; // Set background color for dark mode
+    background-color: $foot-nav-bg-color;
   }
   &-title {
     display: inline;
-    color: $footer-items-color; // You may need to define this color
+    color: $footer-items-color;
     a {
-      color: $dark-link;
+      color: #F08080;
     }
     a:hover {
       color: #CD5C5C;
@@ -100,7 +95,7 @@ h2, h3, h4, h5, h6 {
   &-icons {
     margin-top: -8px;
     a:hover {
-      color: $dark-text;
+      color: white; /* Change icon link text color to white */
     }
     font-size: 20px;
   }
@@ -187,7 +182,7 @@ h2, h3, h4, h5, h6 {
         height: auto;
         padding: 10px;
         margin-bottom: 30px;
-        border-bottom: solid 2px $dark-background;
+        border-bottom: solid 2px #333;
       }
       .date {
         color: rgb(61, 61, 61);
@@ -213,7 +208,7 @@ h2, h3, h4, h5, h6 {
         height: auto;
         padding: 10px;
         margin-bottom: 30px;
-        border-bottom: solid 2px $dark-background;
+        border-bottom: solid 2px #333;
       }
       .date {
         color: rgb(61, 61, 61);
