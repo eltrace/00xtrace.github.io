@@ -4,10 +4,10 @@
 # - 3) just writing something
 # thats it!
 
-title: "Milkshake"
-description: "Simple, minimal and responsive jekyll theme for blogs or personal websites"
-baseurl: /milkshake
-url: "https://hmtcelik.github.io/"
+title: "0xtrace"
+description: "no pwn no life"
+baseurl: /
+url: "https://00xtrace.github.io/"
 
 
 # for navigation
@@ -23,12 +23,9 @@ configuration:
     index_helper: true # which of: "Go to _config.yml for..."
 
 social_links:
-  github: "https://github.com/hmtcelik"
-  twitter: "https://www.twitter.com/"
-  facebook: https://www.facebook.com/
-  instagram: "https://www.instagram.com/"
-
-
+  github: "https://github.com/00xtrace"
+  twitter: "https://www.twitter.com/0xtr4ce"
+  
 plugins:
   - jekyll-feed
   - jekyll-sitemap
