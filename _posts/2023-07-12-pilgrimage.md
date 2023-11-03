@@ -4,8 +4,7 @@ description: Write-up of Pilgrimage Machine (HackTheBox)
 date: 2023-07-12 14:30:00 -3000
 categories: [writeups]
 tags: [hackthebox, htb, writeup, easy, git, imagemagick, binwalk, CVE-2022-4510, CVE-2022-44268]
-author: tandera
-show_image_post: true
+author: trace
 ---
 
 <img src="/assets/writeups/2023-07-12-pilgrimage/Pilgrimage.png" width=500px>
