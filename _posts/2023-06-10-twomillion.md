@@ -4,8 +4,7 @@ description: Write-up of TwoMillion Machine (HackTheBox)
 date: 2023-06-10 18:30:00 -3000
 categories: [writeups]
 tags: [hackthebox, htb, writeup, easy, machine, linux, kernel, api, js-desobfuscation]
-author: tandera
-show_image_post: true
+author: trace
 ---
 
 <img src="/assets/writeups/2023-06-10-twomillion/TwoMillion.png" width=500px alt="Infocard TwoMillion">
