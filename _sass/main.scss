@@ -4,8 +4,7 @@ $font-iosevka: "Iosevka", monospace;
 
 body {
   font-family: #{$font-iosevka}, Verdana, sans-serif;
-  background-color: gray; /* Change the background color to grey */
-  color: white; /* Change text color to white */
+  color: #333;
   font-size: 16px;
   position: relative;
   min-height: 100vh;
@@ -16,7 +15,7 @@ body {
 }
 
 a {
-  color: white; /* Change link text color to white */
+  color: #333;
   text-decoration: none;
 }
 a:hover {
@@ -48,7 +47,7 @@ h2, h3, h4, h5, h6 {
   font-weight: bold;
   &-brand {
     font-size: 22px;
-    color: white; /* Change brand text color to white */
+    color: #333;
   }
   &-brand:hover {
     text-decoration: none;
@@ -63,7 +62,7 @@ h2, h3, h4, h5, h6 {
 
 .nav-item {
   font-size: 16px;
-  color: white; /* Change nav item text color to white */
+  color: #333;
 }
 
 //footer
@@ -95,7 +94,7 @@ h2, h3, h4, h5, h6 {
   &-icons {
     margin-top: -8px;
     a:hover {
-      color: white; /* Change icon link text color to white */
+      color: #333;
     }
     font-size: 20px;
   }
