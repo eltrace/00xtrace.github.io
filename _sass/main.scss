@@ -1,97 +1,99 @@
 @import "./variables.scss";
 
-body{
-  font-family: "Ioveska", Verdana, sans-serif;
+$font-iosevka: "Iosevka", monospace;
+
+body {
+  font-family: #{$font-iosevka}, Verdana, sans-serif;
   color: #333;
   font-size: 16px;
   position: relative;
   min-height: 100vh;
-  margin: 0; 
-  display:flex; 
-  flex-direction:column;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   line-height: 1.6;
 }
 
-a{
+a {
   color: #333;
   text-decoration: none;
 }
-a:hover{
-  color:	#F08080;
+a:hover {
+  color: #F08080;
   text-decoration: underline 3px;
 }
 
-p{
-  font-family: "Poppins", Verdana, sans-serif;
+p {
+  font-family: #{$font-iosevka}, Verdana, sans-serif;
   font-size: 20px;
 }
 
-h1{
+h1 {
   font-weight: bold;
+  font-family: #{$font-iosevka}, Verdana, sans-serif;
   font-size: 48px;
   margin-bottom: 30px;
 }
 
-h2, h3, h4, h5, h6{
+h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 //navbar
-.navbar{
+.navbar {
   padding: 10px;
   background-color: $foot-nav-bg-color;
   font-weight: bold;
-  &-brand{
+  &-brand {
     font-size: 22px;
     color: #333;
   }
-  &-brand:hover{
+  &-brand:hover {
     text-decoration: none;
   }
-  &-logo{
+  &-logo {
     font-weight: bold;
   }
-  .container{
+  .container {
     max-width: 1080px;
   }
 }
 
-.nav-item{
+.nav-item {
   font-size: 16px;
   color: #333;
 }
-  
+
 //footer
-.footer{ 
+.footer {
   margin-top: auto;
-  &-wrapper{
+  &-wrapper {
     padding: 20px 20px;
     height: 100px;
     text-align: center;
     background-color: $foot-nav-bg-color;
   }
-  &-title{
+  &-title {
     display: inline;
     color: $footer-items-color;
-    font-weight: 800;
-    a{
+    a {
       color: #F08080;
     }
-    a:hover{
-      color:#CD5C5C;
+    a:hover {
+      color: #CD5C5C;
     }
   }
-  p{
+  p {
     font-size: 16px;
     display: inline-block;
   }
-  a{
+  a {
     display: inline-block;
   }
-  &-icons{
+  &-icons {
     margin-top: -8px;
-    a:hover{
+    a:hover {
       color: #333;
     }
     font-size: 20px;
@@ -99,49 +101,48 @@ h2, h3, h4, h5, h6{
 }
 
 //homepage
-.home-page{
+.home-page {
   text-align: center;
-  .index{
-    p{
+  .index {
+    p {
       font-size: 18px;
     }
     padding-top: 200px;
     padding-bottom: 300px;
-    &-header{
-      font-family: "Secular One", sans-serif;
+    &-header {
+      font-family: #{$font-iosevka}, sans-serif;
       font-weight: bold;
       font-size: 68px;
       margin-bottom: 20px;
     }
     @media only screen and (max-width: 350px) {
-      &-header{
-        font-size: 17*3px;
+      &-header {
+        font-size: 17 * 3px;
       }
     }
-    &-slide-btn{
+    &-slide-btn {
       font-size: 42px;
       font-weight: 900;
       margin-top: 150px;
-
     }
-    &-slide-btn-hover:hover{
+    &-slide-btn-hover:hover {
       margin-top: 3px;
       transition: margin-top 0.2s ease-in;
       color: rgb(0, 0, 0);
     }
-    &-slide-btn-hover:not(:hover){
+    &-slide-btn-hover:not(:hover) {
       transition: margin-top 0.2s;
       transition-timing-function: ease-out;
       margin-top: 0px;
     }
   }
 
-  .usage{
+  .usage {
     padding-bottom: 300px;
-    &-text{
+    &-text {
       margin-bottom: 10px;
     }
-    &-code-wrapper{
+    &-code-wrapper {
       background-color: #f8f8f8;
       padding: 25px;
       border-radius: 10px;
@@ -149,19 +150,19 @@ h2, h3, h4, h5, h6{
       max-width: 500px;
     }
     @media only screen and (max-width: 550px) {
-      &-code-wrapper{
+      &-code-wrapper {
         max-width: 400px;
       }
     }
     @media only screen and (max-width: 430px) {
-      &-code-wrapper{
+      &-code-wrapper {
         max-width: 300px;
-      }  
+      }
     }
-    &-codes{
+    &-codes {
       text-align: left;
     }
-    &-text2{
+    &-text2 {
       margin-top: 30px;
       font-size: 15px;
       font-weight: 100;
@@ -169,11 +170,11 @@ h2, h3, h4, h5, h6{
       color: rgb(103, 103, 103);
     }
   }
-  .post-list{
+  .post-list {
     padding-top: 130px;
     padding-bottom: 300px;
-    .post{
-      .wrapper{
+    .post {
+      .wrapper {
         margin: 0 auto;
         text-align: left;
         max-width: 700px;
@@ -182,23 +183,24 @@ h2, h3, h4, h5, h6{
         margin-bottom: 30px;
         border-bottom: solid 2px #333;
       }
-      .date{
+      .date {
         color: rgb(61, 61, 61);
         font-size: 13px;
       }
     }
     @media only screen and (max-width: 586px) {
-      
-      }
+      // Media queries for post-list at smaller screens
+    }
   }
 }
-.blog{
+
+.blog {
   text-align: center;
-  .post-list{
+  .post-list {
     padding-top: 20px;
     padding-bottom: 100px;
-    .post{
-      .wrapper{
+    .post {
+      .wrapper {
         margin: 0 auto;
         text-align: left;
         max-width: 700px;
@@ -207,7 +209,7 @@ h2, h3, h4, h5, h6{
         margin-bottom: 30px;
         border-bottom: solid 2px #333;
       }
-      .date{
+      .date {
         color: rgb(61, 61, 61);
         font-size: 13px;
       }
@@ -215,25 +217,25 @@ h2, h3, h4, h5, h6{
   }
 }
 
-.about{
+.about {
   padding-top: 130px;
   padding-bottom: 50px;
   text-align: center;
-  p{
+  p {
     margin-bottom: 40px;
   }
-  .container{
+  .container {
     margin-top: -20px;
     display: flex;
     max-width: 1000px;
   }
-  .header-wrapper{
+  .header-wrapper {
     float: left;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
   }
-  .text-wrapper{
+  .text-wrapper {
     float: right;
     margin: 0 auto;
     padding: 20px;
@@ -241,75 +243,71 @@ h2, h3, h4, h5, h6{
     max-width: 800px;
     min-height: 300px;
   }
-  .pp{
+  .pp {
     width: 180px;
     border-radius: 50%;
   }
-  .text{
+  .text {
     margin-top: 10px;
   }
-  .links{
+  .links {
     margin-top: 30px;
     font-size: 20px;
-    .item{
+    .item {
       padding: 3px;
     }
   }
   @media only screen and (max-width: 866px) {
-    .container{
+    .container {
       display: block;
     }
-    .header-wrapper{
+    .header-wrapper {
       width: 100%;
       margin: 0 auto;
     }
-    .text-wrapper{
+    .text-wrapper {
       width: 100%;
       margin: 0 auto;
     }
   } // end media
 }
 
-.blog{
-  padding:130px 100px;
-}
-
-.post-template{
+.post-template {
   padding-top: 130px;
   padding-bottom: 100px;
-  .colon{
+  .colon {
     margin: 0 auto;
   }
-  .title{
+  .title {
     text-align: center;
     margin-bottom: 70px;
   }
-  .img{
+  .img {
     max-width: 100%;
   }
-  .date{
+  .date {
     color: rgb(104, 104, 104);
     font-size: 18px;
     margin-top: 10px;
   }
-  .text{
+  .text {
     margin-top: 60px;
     padding: 20px;
   }
-  p{
-      margin-bottom: 40px;
+  p {
+    margin-bottom: 40px;
   }
   @media only screen and (max-width: 866px) {
-    .title{
+    .title {
+      font-family: #{$font-iosevka}, Verdana, sans-serif;
       font-size: 36px;
       margin-bottom: 50px;
     }
-    .text{
+    .text {
       margin-top: 30px;
     }
-    .date{
+    .date {
       font-size: 16px;
     }
-
   }
 }
