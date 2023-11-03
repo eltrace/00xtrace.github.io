@@ -7,8 +7,6 @@ tags: [hackthebox, htb, writeup, easy, git, imagemagick, binwalk, CVE-2022-4510,
 author: trace
 ---
 
-<img src="/assets/writeups/2023-07-12-pilgrimage/Pilgrimage.png" width=500px>
-
 ## Machine Information
 
 ---
