@@ -33,13 +33,12 @@ title: trace
         </div>
         <div class="post">
           <div class="container">
-            {% for post in site.posts | limit:4 reversed %}
+            {% for post in site.posts | limit:5 reversed %}
             <div class="row">
               <div class="wrapper">
                 <a href="{{post.url}}">
                   <h3>{{post.title}}</h3>
                 </a>
-                <p>{{post.excerpt | truncate: 150}}</p>
                 <p class="date">{{post.date | date: "%-d %B %Y"}}</p>
               </div>
             </div>
