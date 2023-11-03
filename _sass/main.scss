@@ -2,9 +2,14 @@
 
 $font-iosevka: "Iosevka", monospace;
 
+// Define dark mode colors
+$dark-background: #333;
+$dark-text: #fff;
+$dark-link: #F08080;
+
 body {
   font-family: #{$font-iosevka}, Verdana, sans-serif;
-  color: #333;
+  color: $dark-text;
   font-size: 16px;
   position: relative;
   min-height: 100vh;
@@ -12,14 +17,15 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.6;
+  background-color: $dark-background; // Set background color for dark mode
 }
 
 a {
-  color: #333;
+  color: $dark-text;
   text-decoration: none;
 }
 a:hover {
-  color: #F08080;
+  color: $dark-link;
   text-decoration: underline 3px;
 }
 
@@ -43,11 +49,11 @@ h2, h3, h4, h5, h6 {
 //navbar
 .navbar {
   padding: 10px;
-  background-color: $foot-nav-bg-color;
+  background-color: $dark-background; // Set background color for dark mode
   font-weight: bold;
   &-brand {
     font-size: 22px;
-    color: #333;
+    color: $dark-text;
   }
   &-brand:hover {
     text-decoration: none;
@@ -62,7 +68,7 @@ h2, h3, h4, h5, h6 {
 
 .nav-item {
   font-size: 16px;
-  color: #333;
+  color: $dark-text;
 }
 
 //footer
@@ -72,13 +78,13 @@ h2, h3, h4, h5, h6 {
     padding: 20px 20px;
     height: 100px;
     text-align: center;
-    background-color: $foot-nav-bg-color;
+    background-color: $dark-background; // Set background color for dark mode
   }
   &-title {
     display: inline;
-    color: $footer-items-color;
+    color: $footer-items-color; // You may need to define this color
     a {
-      color: #F08080;
+      color: $dark-link;
     }
     a:hover {
       color: #CD5C5C;
@@ -94,7 +100,7 @@ h2, h3, h4, h5, h6 {
   &-icons {
     margin-top: -8px;
     a:hover {
-      color: #333;
+      color: $dark-text;
     }
     font-size: 20px;
   }
@@ -181,7 +187,7 @@ h2, h3, h4, h5, h6 {
         height: auto;
         padding: 10px;
         margin-bottom: 30px;
-        border-bottom: solid 2px #333;
+        border-bottom: solid 2px $dark-background;
       }
       .date {
         color: rgb(61, 61, 61);
@@ -207,7 +213,7 @@ h2, h3, h4, h5, h6 {
         height: auto;
         padding: 10px;
         margin-bottom: 30px;
-        border-bottom: solid 2px #333;
+        border-bottom: solid 2px $dark-background;
       }
       .date {
         color: rgb(61, 61, 61);
