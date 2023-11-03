@@ -6,6 +6,7 @@ $font-iosevka: "Iosevka", monospace;
 $dark-background: #333;
 $dark-text: #fff;
 $dark-link: #F08080;
+$light-text: #
 
 body {
   font-family: #{$font-iosevka}, Verdana, sans-serif;
@@ -68,7 +69,7 @@ h2, h3, h4, h5, h6 {
 
 .nav-item {
   font-size: 16px;
-  color: $dark-text;
+  color: white;
 }
 
 //footer
