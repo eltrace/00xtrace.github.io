@@ -1,1 +1,1 @@
-Blogs, Writeups, Tips and stuff
+Blogs, Writeups and stuff
